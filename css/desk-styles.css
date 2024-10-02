@@ -594,12 +594,6 @@ input {
 
 /* Modal button */
 
-.modal-button-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 24px;
-}
-
 .modal-button-close {
     position: absolute;
     top: 24px;

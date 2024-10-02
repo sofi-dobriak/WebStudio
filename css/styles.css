@@ -115,7 +115,7 @@ input {
     font-size: 16px;
 }
 
-/* Navigation */
+/* Header */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -132,66 +132,11 @@ input {
     flex-grow: 1;
 }
 
-/* .header-logo {
-    margin-right: 76px;
-} */
-
-/* .header-list {
-    display: flex;
-    gap: 40px;
-    flex-grow: 1;
-} */
-
-.header-item {
-    display: block;
-    padding: 24px 0;
-    font-weight: 500;
-    color: #2e2f42;
-
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-item:hover,
-.address-item:hover {
-    color: #404bbf;
-}
-
-.header-list li:first-child .header-item {
-    color: #404bbf;
-}
-
-.header-list li:first-child .header-item::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-.address-list {
-    display: flex;
-    gap: 40px;
-}
-
-.address-item {
-    display: block;
-    padding: 24px 0;
-}
-
-
 
 /* === MEDIA QUERIES === */
 
 
-/* Mobile */
+/* MOBILE */
 
 @media screen and (min-width: 320px) {
     .container {
@@ -201,7 +146,6 @@ input {
     .section {
         padding: 96px 0;
     }
-
 
     /* Header */
 
@@ -226,8 +170,11 @@ input {
         fill: #2f2f37;
     }
 
-
     /* Mobile menu */
+
+    .mobile-menu-container {
+        padding: 72px 24px 40px 16px;
+    }
 
     .mobile-menu {
         position: fixed;
@@ -249,7 +196,126 @@ input {
     .mobile-menu.is-open {
         transform: translateX(0);
     }
+
+    /* Button close */
+
+    .mobile-menu-button-close {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background-color: #e7e9fc;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-menu-button-close:hover,
+    .mobile-menu-button-close:focus {
+        border: none;
+        background-color: #404bbf;
+    }
+
+    .mobile-menu-icon-close {
+        fill: #2e2f42;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-menu-button-close:hover .mobile-menu-icon-close,
+    .mobile-menu-button-close:focus .mobile-menu-icon-close {
+        fill: #fff;
+    }
+
+    /* Links */
+
+    .mobile-menu-link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 168px;
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
+    .mobile-menu-link-list li:first-child .mobile-menu-link-item {
+        color: #404bbf;
+    }
+
+    /* Address */
+
+    .mobile-menu-address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .mobile-menu-address-list li:first-child .mobile-menu-address-item {
+        color: #4d5ae5;
+    }
+
+    .mobile-menu-link-item:hover,
+    .mobile-menu-link-item:focus,
+    .mobile-menu-address-item:hover,
+    .mobile-menu-address-item:focus {
+        color: #4d5ae5;
+    }
+
+    /* Social links */
+
+    .footer-social-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 40;
+    }
+
+    .footer-social-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .footer-social-link:hover,
+    .footer-social-link:focus {
+        background-color: #31d0aa;
+    }
+
+    .footer-social-link-icon {
+        fill: #f4f4fd;
+    }
 }
+
 
 
 /* Tablet */
