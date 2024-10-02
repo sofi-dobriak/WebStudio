@@ -103,11 +103,11 @@ input {
 }
 
 .section-sub-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #2e2f42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 8px;
 }
 
@@ -130,6 +130,60 @@ input {
 .header-nav {
     display: flex;
     flex-grow: 1;
+}
+
+/* Hero section */
+
+.hero-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-button {
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    cursor: pointer;
+
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+/* Advantages */
+
+.advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 
@@ -170,7 +224,7 @@ input {
         fill: #2f2f37;
     }
 
-    /* Mobile menu */
+    /* === Mobile menu === */
 
     .mobile-menu-container {
         padding: 72px 24px 40px 16px;
@@ -314,6 +368,31 @@ input {
     .footer-social-link-icon {
         fill: #f4f4fd;
     }
+
+
+    /* Hero section */
+
+    .hero-section {
+        padding: 72px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.11;
+        margin-bottom: 72px;
+        max-width: 216px;
+    }
+
+
+    /* Advantages */
+
+    .advantages-icon-container {
+        display: none;
+    }
+
+    .section-sub-title {
+        text-align: center;
+    }
 }
 
 
@@ -328,6 +407,10 @@ input {
     }
 
     .header-burger {
+        display: none;
+    }
+
+    .mobile-menu {
         display: none;
     }
 }
