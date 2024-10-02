@@ -916,7 +916,7 @@ input {
     /* Hero section */
 
     .hero-section {
-        padding: 72px;
+        padding: 72px 52px;
     }
 
     .hero-title {
@@ -1102,6 +1102,10 @@ input {
         padding: 96px 108px;
     }
 
+    .section-sub-title {
+        text-align: center;
+    }
+
     .team-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1112,6 +1116,67 @@ input {
     .team-item {
         flex: calc((100% - 64px) / 2)
     }
+
+    /* Portfolio */
+
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 72px;
+        column-gap: 24px;
+    }
+
+    .portfolio-item {
+        flex: calc((100% - 72px) / 2)
+    }
+
+    /* Footer */
+
+    .container {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 96px 164px 96px 108px;
+    }
+
+    .footer-content-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .footer-logo-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-logo {
+        text-align: start;
+    }
+
+    .footer-social-container {
+        text-align: start;
+    }
+
+    .footer-social-list {
+        justify-content: center;
+    }
+
+    .footer-form-title {
+        text-align: start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .footer-form-input {
+        width: 288px;
+    }
+
 
     /* Modal window */
 
