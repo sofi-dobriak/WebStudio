@@ -734,6 +734,13 @@ input {
 
 /* === MEDIA QUERIES === */
 
+@media (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url('../images/bg-img@2x.jpg');
+    }
+}
+
 
 /* === MOBILE === */
 
