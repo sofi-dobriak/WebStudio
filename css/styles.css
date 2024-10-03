@@ -434,7 +434,6 @@ input {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    opacity: 0.6;
     color: #fff;
 }
 
@@ -449,7 +448,6 @@ input {
     width: 165px;
     height: 40px;
     margin: 0 auto;
-    ;
 
     display: flex;
     justify-content: center;
@@ -1067,6 +1065,11 @@ input {
         padding: 24px 0;
     }
 
+    .address-item {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
     .header-list li:first-child .header-item {
         color: #404bbf;
     }
@@ -1093,7 +1096,7 @@ input {
     /* Hero section */
 
     .hero-section {
-        padding: 112px;
+        padding: 112px 0;
     }
 
     .hero-title {
@@ -1123,7 +1126,11 @@ input {
     /* Team */
 
     .team-section {
-        padding: 96px 108px;
+        padding: 96px 0;
+    }
+
+    .team-section-container {
+        width: 584px;
     }
 
     .section-sub-title {
@@ -1155,13 +1162,8 @@ input {
     }
 
     /* Footer */
-
-    .container {
-        padding: 0;
-    }
-
     .footer {
-        padding: 96px 164px 96px 108px;
+        padding: 96px 0 96px 0;
     }
 
     .footer-content-container {
@@ -1169,6 +1171,7 @@ input {
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 72px;
+        width: 584px;
     }
 
     .footer-logo-container {
@@ -1215,7 +1218,6 @@ input {
 
 @media screen and (min-width: 1158px) {
     .container {
-
         max-width: 1158px;
     }
 
@@ -1246,10 +1248,15 @@ input {
         gap: 40px;
     }
 
+    .address-item {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
     /* Hero section */
 
     .hero-section {
-        padding: 188px;
+        padding: 188px 0;
     }
 
     .hero-title {
@@ -1284,6 +1291,10 @@ input {
 
     /* Team */
 
+    .team-section-container {
+        width: 100%;
+    }
+
     .team-list {
         flex-wrap: wrap;
         gap: 24px;
@@ -1298,7 +1309,6 @@ input {
     .portfolio-list {
         flex-wrap: wrap;
         column-gap: 24px;
-        row-gap: 48px;
     }
 
     .portfolio-item {
@@ -1312,7 +1322,10 @@ input {
     }
 
     .footer-content-container {
-        flex-direction: row;
+        width: 100%;
+        flex-wrap: nowrap;
+        column-gap: 12px;
+
     }
 
     .footer-logo-container {
