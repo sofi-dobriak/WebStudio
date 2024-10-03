@@ -667,6 +667,7 @@ input {
 
 .checkbox-label {
     display: flex;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -674,8 +675,8 @@ input {
 }
 
 .checkbox {
-    width: 16px;
-    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -920,7 +921,7 @@ input {
     /* Hero section */
 
     .hero-section {
-        padding: 72px 52px;
+        padding: 72px 0px;
     }
 
     .hero-title {
@@ -944,6 +945,7 @@ input {
         line-height: 1.11;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        margin-bottom: 8px;
     }
 
     .advantages-list {
@@ -1009,14 +1011,15 @@ input {
     /* Modal window */
 
     .modal-window {
-        width: 288px;
+        min-width: 288px;
         min-height: 623px;
         padding: 72px 16px 24px 16px;
     }
 
-    .checkbox-label {
-        gap: 8px;
-        align-items: center;
+    .checkbox {
+        width: 16px;
+        height: 16px;
+        margin-right: 8px;
     }
 }
 

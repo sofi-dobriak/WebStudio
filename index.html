@@ -53,7 +53,7 @@
             </button>
 
             <!-- Mobile menu -->
-            <div class="mobile-menu is-open"> <!--is-open-->
+            <div class="mobile-menu "> <!--is-open-->
                 <button class="mobile-menu-button-close" type="button">
                     <svg class="mobile-menu-icon-close" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
@@ -519,7 +519,7 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="modal-overlay ">
+    <div class="modal-overlay is-open"> <!--is open-->
         <div class="modal-window">
             <button type="button" class="modal-button-close">
                 <svg class="modal-icon-close" width="8" height="8">
@@ -576,13 +576,15 @@
                         id="user-privacy" />
 
                     <label class="checkbox-label" for="user-privacy">
-                        <span class="checkbox">
+                        <span class="checkbox" width="16" height="16">
                             <svg class="checkbox-label-icon" width="10" height="8">
                                 <use href="./images/icons.svg#icon-ckeck"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="privacy-policy-link" href="">Privacy Policy</a>
+                        <div class="checkbox-label-text">
+                            I accept the terms and conditions of the
+                            <a class="privacy-policy-link" href="">Privacy Policy</a>
+                        </div>
                     </label>
                 </div>
                 <button class="modal-form-button" type="submit">Send</button>
