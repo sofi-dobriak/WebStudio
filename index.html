@@ -28,8 +28,8 @@
 
                 <ul class="header-list">
                     <li><a class="header-item" href="./index.html">Studio</a></li>
-                    <li><a class="header-item" href="">Portfolio</a></li>
-                    <li><a class="header-item" href="">Contacts</a></li>
+                    <li><a class="header-item" href="#portfolio">Portfolio</a></li>
+                    <li><a class="header-item" href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
 
@@ -46,7 +46,7 @@
             </address>
 
             <!-- Burger button -->
-            <button class="header-burger" type="button">
+            <button class="header-burger mobile-btn-open" type="button">
                 <svg class="header-burger-icon" width="16" height="14">
                     <use href="./images/icons.svg#icon-burger-menu"></use>
                 </svg>
@@ -54,7 +54,7 @@
 
             <!-- Mobile menu -->
             <div class="mobile-menu "> <!--is-open-->
-                <button class="mobile-menu-button-close" type="button">
+                <button class="mobile-menu-button-close mobile-btn-close" type="button">
                     <svg class="mobile-menu-icon-close" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -65,8 +65,8 @@
                     <nav>
                         <ul class="mobile-menu-link-list">
                             <li><a class="mobile-menu-link-item" href="./index.html">Studio</a></li>
-                            <li><a class="mobile-menu-link-item" href="">Portfolio</a></li>
-                            <li><a class="mobile-menu-link-item" href="">Contacts</a></li>
+                            <li><a class="mobile-menu-link-item" href="#portfolio">Portfolio</a></li>
+                            <li><a class="mobile-menu-link-item" href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
 
@@ -126,7 +126,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button">Order Service</button>
+                <button class="hero-button modal-btn-open" type="button">Order Service</button>
             </div>
         </section>
 
@@ -364,7 +364,7 @@
         </section>
 
         <!-- Portfolio -->
-        <section class="section">
+        <section class="section" id="portfolio">
             <div class="container">
                 <h2 class="section-title">Our Portfolio</h2>
 
@@ -538,7 +538,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container footer-content-container">
             <div class="footer-logo-container">
                 <a class="logo footer-logo" href=" ./index.html">Web<span class="light-accent">Studio</span></a>
@@ -602,9 +602,9 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="modal-overlay "> <!--is open-->
+    <div class="modal-overlay"> <!--is open-->
         <div class="modal-window">
-            <button type="button" class="modal-button-close">
+            <button class="modal-button-close modal-btn-close" type="button">
                 <svg class="modal-icon-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -674,6 +674,9 @@
             </form>
         </div>
     </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
