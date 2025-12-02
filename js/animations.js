@@ -12,7 +12,6 @@ sectionTitles.forEach(titleElement => {
     scrollTrigger: {
       trigger: titleElement,
       start: 'top 50%',
-      markers: true,
     },
   });
 });
