@@ -5,14 +5,12 @@ const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link-item');
 
 const toggleMenu = () => {
   mobileMenu.classList.toggle('is-open');
-  desableScroll();
+  document.body.style.overflow = 'hidden';
 };
-
-const desableScroll = () => document.body.classList.toggle('is-scroll-disable');
 
 const closeMenu = () => {
   mobileMenu.classList.remove('is-open');
-  desableScroll();
+  document.body.style.overflow = '';
 };
 
 mobileBtnOpen.addEventListener('click', toggleMenu);

@@ -11,7 +11,7 @@ sectionTitles.forEach(titleElement => {
     duration: 0.08,
     scrollTrigger: {
       trigger: titleElement,
-      start: 'top 50%',
+      start: 'top 90%',
     },
   });
 });
@@ -40,3 +40,15 @@ function scrollAnimation(item) {
 scrollAnimation('.advantages-item');
 scrollAnimation('.team-item');
 scrollAnimation('.portfolio-item');
+
+gsap.to('.hero-background', {
+  y: 200,
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.hero-section',
+    scroller: 'body',
+    start: 'top top',
+    end: 'bottom top',
+    scrub: true,
+  },
+});
