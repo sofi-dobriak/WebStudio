@@ -16,26 +16,27 @@ sectionTitles.forEach(titleElement => {
   });
 });
 
-function scrollAnimation(targetSelector, triggerSelector) {
-  gsap.fromTo(
-    targetSelector,
-    {
-      y: 250,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 0.6,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: triggerSelector,
-        start: 'top 50%',
-      },
-    }
-  );
+function scrollAnimation(item) {
+  document.querySelectorAll(item).forEach(block => {
+    gsap.fromTo(
+      block,
+      { y: 50, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: block,
+          start: 'top 80%',
+          toggleActions: 'play none none none',
+          fastScrollEnd: true,
+          once: true,
+        },
+      }
+    );
+  });
 }
 
-scrollAnimation('.advantages-item', '.advantages-section');
-scrollAnimation('.team-item', '.team-section');
-scrollAnimation('.portfolio-item', '.portfolio-section');
+scrollAnimation('.advantages-item');
+scrollAnimation('.team-item');
+scrollAnimation('.portfolio-item');
